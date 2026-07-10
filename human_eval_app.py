@@ -117,6 +117,7 @@ with st.sidebar:
 
 if not remaining:
     st.success(f"All {n_total} pairs complete! Thank you for your annotations.")
+    st.link_button("Complete on Prolific", st.secrets["prolific_completion_url"])
     st.stop()
 
 # ── Annotation screen ─────────────────────────────────────────────────────────
